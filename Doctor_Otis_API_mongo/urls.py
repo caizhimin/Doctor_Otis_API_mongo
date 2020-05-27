@@ -19,6 +19,6 @@ from API import views
 
 urlpatterns = [
     re_path('^do_data/(?P<unit_number>[\S]{8})/$', views.DO_data),
-    re_path('^delete_token/$', views.delete_expires_token),
+    # re_path('^delete_token/$', views.delete_expires_token),
     path('admin/', admin.site.urls),
 ]
