@@ -74,29 +74,47 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'Doctor_Otis_API_mongo.wsgi.application'
 
-# Database
-# https://docs.djangoproject.com/en/2.2/ref/settings/#databases
 
+# Database
+# https://docs.djangoproject.com/en/2.1/ref/settings/#databases
 DATABASES = {
     'default': {
-        'ENGINE': 'djongo',
-        'NAME': 'DO_and_TSB_report',
-        'ENFORCE_SCHEMA': False,
-        'CLIENT': {
-            'host': cosmos_key,
-        },
-        'SSL': True,
-        'LOGGING': {
-            'version': 1,
-            'loggers': {
-                'djongo': {
-                    'level': 'DEBUG',
-                    'propogate': False,
-                }
-            },
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'do_api',
+        'USER': 'cai@do-api-database-vegctujtkpkfg',
+        'PASSWORD': '1Q2w3e4r',
+        'HOST': 'do-api-database-vegctujtkpkfg.mysql.database.azure.com',
+        'PORT': '3306',
+        'OPTIONS': {
+            'init_command': 'SET sql_mode=STRICT_TRANS_TABLES',
         },
     }
 }
+
+
+# Database
+# https://docs.djangoproject.com/en/2.2/ref/settings/#databases
+#
+# DATABASES = {
+#     'default': {
+#         'ENGINE': 'djongo',
+#         'NAME': 'DO_and_TSB_report',
+#         'ENFORCE_SCHEMA': False,
+#         'CLIENT': {
+#             'host': cosmos_key,
+#         },
+#         'SSL': True,
+#         'LOGGING': {
+#             'version': 1,
+#             'loggers': {
+#                 'djongo': {
+#                     'level': 'DEBUG',
+#                     'propogate': False,
+#                 }
+#             },
+#         },
+#     }
+# }
 
 # Password validation
 # https://docs.djangoproject.com/en/2.2/ref/settings/#auth-password-validators
