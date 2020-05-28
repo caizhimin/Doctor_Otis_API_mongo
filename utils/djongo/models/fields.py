@@ -32,7 +32,7 @@ from django.utils.html import format_html_join, format_html
 from django.utils.safestring import mark_safe
 from django.utils.translation import gettext_lazy as _
 
-from djongo.exceptions import NotSupportedError, print_warn
+from utils.djongo.exceptions import NotSupportedError, print_warn
 
 
 def make_mdl(model, model_dict):

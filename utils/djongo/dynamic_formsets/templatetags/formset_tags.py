@@ -1,5 +1,5 @@
 from django import template
-from djongo.models.fields import ArrayFormField
+from utils.djongo.models.fields import ArrayFormField
 
 
 register = template.Library()
