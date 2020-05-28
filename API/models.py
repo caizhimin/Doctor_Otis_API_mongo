@@ -19,4 +19,5 @@ class ApiRecord(models.Model):
         record.authorization = authorization
         record.unit_number = unit_number
         record.datetime = datetime.now()
+        print(32424234)
         record.save()
