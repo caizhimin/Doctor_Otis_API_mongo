@@ -98,22 +98,13 @@ ssl._create_default_https_context = ssl._create_unverified_context
 
 DATABASES = {
     'default': {
-        'ENGINE': 'djongo',
+        'ENGINE': 'utils.djongo',
         'NAME': 'DO_and_TSB_report',
         'ENFORCE_SCHEMA': False,
         'CLIENT': {
             'host': cosmos_key,
         },
-        'ssl': True,
-        'LOGGING': {
-            'version': 1,
-            'loggers': {
-                'djongo': {
-                    'level': 'DEBUG',
-                    'propogate': False,
-                }
-            },
-        },
+        'ssl': True
     }
 }
 
