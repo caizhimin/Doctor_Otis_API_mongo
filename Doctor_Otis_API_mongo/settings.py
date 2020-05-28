@@ -102,6 +102,7 @@ DATABASES = {
         'CLIENT': {
             'host': cosmos_key,
         },
+        'ssl': True,
         'LOGGING': {
             'version': 1,
             'loggers': {
@@ -149,3 +150,10 @@ USE_L10N = True
 STATIC_URL = '/static/'
 
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+
+
+
+try:
+    from local_settings import *
+except:
+    pass
