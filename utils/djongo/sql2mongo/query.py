@@ -796,7 +796,7 @@ class Query:
             raise
 
         except OperationFailure as e:
-            import djongo
+            import utils.djongo
             exe = SQLDecodeError(
                 f'FAILED SQL: {self._sql}\n' 
                 f'Params: {self._params}\n'
@@ -806,7 +806,7 @@ class Query:
             raise exe from e
 
         except Exception as e:
-            import djongo
+            import utils.djongo
             exe = SQLDecodeError(
                 f'FAILED SQL: {self._sql}\n'
                 f'Params: {self._params}\n'
@@ -845,7 +845,7 @@ class Query:
                 raise
 
             except OperationFailure as e:
-                import djongo
+                import utils.djongo
                 exe = SQLDecodeError(
                     f'FAILED SQL: {self._sql}\n'
                     f'Params: {self._params}\n'

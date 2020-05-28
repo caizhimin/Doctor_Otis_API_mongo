@@ -30,9 +30,9 @@ class DatabaseIntrospection(BaseDatabaseIntrospection):
         'number': 'DecimalField',
         'string': 'CharField',
         'boolean': 'BooleanField',
-        'object': 'djongo.models.DictField',
-        'array': 'djongo.models.ListField',
-        'oid': 'djongo.models.ObjectIdField',
+        'object': 'utils.djongo.models.DictField',
+        'array': 'utils.djongo.models.ListField',
+        'oid': 'utils.djongo.models.ObjectIdField',
         'date': 'DateTimeField'
 
     }
