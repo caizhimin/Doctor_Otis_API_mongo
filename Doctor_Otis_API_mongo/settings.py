@@ -31,11 +31,11 @@ ALLOWED_HOSTS = ['https://do-api-cosmos-chn-vegctujtkpkfg.azurewebsites.net/', '
 
 INSTALLED_APPS = [
     'whitenoise.runserver_nostatic',
-    'suit',
+    # 'suit',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
-    # 'django.contrib.sessions',
+    'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'rest_framework',
