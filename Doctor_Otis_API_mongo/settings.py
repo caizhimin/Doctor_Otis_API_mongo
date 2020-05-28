@@ -93,6 +93,8 @@ WSGI_APPLICATION = 'Doctor_Otis_API_mongo.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/2.2/ref/settings/#databases
+import ssl
+ssl._create_default_https_context = ssl._create_unverified_context
 
 DATABASES = {
     'default': {
