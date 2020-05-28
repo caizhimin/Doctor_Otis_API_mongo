@@ -30,7 +30,7 @@ from .converters import (
     SetConverter, AggOrderConverter, DistinctConverter, NestedInQueryConverter, GroupbyConverter, OffsetConverter,
     AggOffsetConverter, HavingConverter)
 
-from djongo import base
+from utils.djongo import base
 logger = getLogger(__name__)
 
 @dataclass
