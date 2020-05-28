@@ -98,7 +98,7 @@ ssl._create_default_https_context = ssl._create_unverified_context
 
 DATABASES = {
     'default': {
-        'ENGINE': 'utils.djongo',
+        'ENGINE': 'djongo',
         'NAME': 'DO_and_TSB_report',
         'ENFORCE_SCHEMA': False,
         'CLIENT': {

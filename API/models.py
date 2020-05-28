@@ -1,4 +1,4 @@
-from utils.djongo import models
+from djongo import models
 from datetime import datetime
 
 
