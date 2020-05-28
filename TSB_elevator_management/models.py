@@ -1,4 +1,4 @@
-from djongo import models
+from utils.djongo import models
 
 # Create your models here.
 
